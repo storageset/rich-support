@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #D4AF37;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #D4AF37;
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin: 40px 0 20px;
+            letter-spacing: 2px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .highlight {
+            color: #D4AF37;
+        }
+        
+        .section {
+            margin: 50px 0;
+            background-color: #1A1A22;
+            border-radius: 10px;
+            padding: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .contact-form {
+            display: grid;
+            gap: 20px;
+        }
+        
+        input, textarea, button {
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background-color: #222;
+            color: #fff;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background: linear-gradient(to right, #D4AF37, #C19A30);
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+        }
+        
+        .faq-question {
+            font-weight: 500;
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .privacy {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 30px 0;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                padding: 20px;
+                margin: 30px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://raw.githubusercontent.com/yourusername/rich-support/main/logo.png" alt="Rich App Logo" class="logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23222%22 /><text x=%2250%22 y=%2250%22 font-family=%22Arial%22 font-size=%2250%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22%23D4AF37%22>R</text><circle cx=%2270%22 cy=%2230%22 r=%227%22 fill=%22%23D4AF37%22 /><circle cx=%2230%22 cy=%2230%22 r=%227%22 fill=%22%23D4AF37%22 /><circle cx=%2250%22 cy=%2215%22 r=%227%22 fill=%22%23D4AF37%22 /></svg>'">
+            <h1>RICH</h1>
+            <p>Elevate Your Abundance Mindset</p>
+        </header>
+        
+        <section class="section">
+            <h2>WELCOME TO RICH SUPPORT</h2>
+            <p>Thank you for choosing <span class="highlight">Rich</span>, the premium daily companion for individuals of true affluence. We're dedicated to providing you with an exceptional experience and are here to assist with any questions or concerns you may have.</p>
+            <p>Our exclusive application has been meticulously crafted for those who have already achieved financial success and seek to maintain and enhance their prosperity mindset.</p>
+        </section>
+        
+        <section class="section" id="contact">
+            <h2>CONTACT SUPPORT</h2>
+            <p>If you have any questions, feedback, or require assistance, please fill out the form below and our dedicated support team will respond promptly.</p>
+            
+            <form class="contact-form" action="https://formsubmit.co/sabir.abidi@protonmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Rich App Support Request">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next" value="https://yourusername.github.io/rich-support/thank-you.html">
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="section" id="faq">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">How often is new content added to Rich?</p>
+                <p>Rich provides you with a new affirmation and quote each day, drawn from our curated collection of over 900 premium quotes and affirmations. Each piece of content is thoughtfully selected to align with the prosperity mindset that has driven your success.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Can I save my favorite quotes and affirmations?</p>
+                <p>Yes, Rich allows you to save your favorite content to your personal collection. Simply tap the bookmark icon on any quote or affirmation to add it to your favorites, which you can access at any time.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Is my data kept private?</p>
+                <p>Absolutely. Rich is designed with your privacy in mind. Any data stored is kept locally on your device and is not shared with third parties. We do not collect personal information beyond what is necessary for the app's functionality.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I share content from Rich?</p>
+                <p>Rich includes discreet sharing capabilities for moments of exceptional insight. Simply tap the share button on any quote or affirmation to share it via your preferred method.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Will Rich receive updates?</p>
+                <p>Yes, we are committed to enhancing your experience with Rich. Future updates may include new content, refined features, and aesthetic enhancements, all while maintaining the sophisticated, minimalist interface you value.</p>
+            </div>
+        </section>
+        
+        <section class="section" id="privacy">
+            <h2>PRIVACY POLICY</h2>
+            
+            <p><strong>Effective Date: April 8, 2025</strong></p>
+            
+            <p>This Privacy Policy describes how Rich ("we", "our", or "us") collects, uses, and discloses your information when you use our mobile application (the "App").</p>
+            
+            <div class="privacy">
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Information We Collect</h3>
+                <p>Rich is designed to respect your privacy. We collect minimal data, which is stored locally on your device:</p>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li>Favorite quotes and affirmations</li>
+                    <li>App usage preferences</li>
+                </ul>
+                
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Use of Information</h3>
+                <p>The information we collect is used solely to enhance your experience with the App, including:</p>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li>Providing personalized content</li>
+                    <li>Saving your preferences</li>
+                    <li>Improving the App's functionality</li>
+                </ul>
+                
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Sharing of Information</h3>
+                <p>We do not share your information with third parties. Your data remains on your device and is not transmitted to our servers or any other external parties.</p>
+                
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Data Security</h3>
+                <p>We implement appropriate security measures to protect your personal information. However, please be aware that no method of electronic storage is 100% secure.</p>
+                
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Changes to This Privacy Policy</h3>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top.</p>
+                
+                <h3 style="color: #D4AF37; margin-bottom: 15px;">Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:sabir.abidi@icloud.com" style="color: #D4AF37; text-decoration: none;">sabir.abidi@icloud.com</a></p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 Rich. All Rights Reserved.</p>
+            <p>Designed exclusively for those who understand true prosperity consciousness.</p>
+        </footer>
+    </div>
+</body>
+</html>
